@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  <script type="text/javascript" src=" {{ url_for('static',filename= 'js/jquery-3.2.1.min.js') }}"></script>
+  <!--<script type="text/javascript" src="/js/site.js"></script> -->
+  <script type="text/javascript" src="{{ url_for('static',filename='js/magic.js')}}"></script>
+  </head>
+    <header>
+      <body>
+      <nav>
+        <div class="container">
+          <div class="">
+            <a href="#parallax">Tech Solutions</a>
+          </div>
+          <div id="hamburger" class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <ul>
+            <li><a href="#drone">Drone</a></li>
+            <li><a href="#raspberry">Raspbery</a></li>
+            <li> <a href="#arduino">Arduino</a></li>
+            <li><a href="#app-dev">Application</a></li>
+          </ul>
+
+
+        </div>
+
+      </nav>
+    </header>
+    <section class="parallax" id="parallax" style="background-image: url('{{ url_for('static',filename= 'imgs/pexels.jpeg')}}">
+      <div class="ptext"> <span class="border">Tech Solutions</span></div>
+    </section>
+    <section id="drone" class="section-light">
+      <div class="text left">
+        <div class="">
+
+          <h3>Drones</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+      </div>
+      <div class="img">
+        <img src="{{ url_for('static',filename='imgs/drone.jpeg')}}" alt="">
+      </div>
+    </section>
+
+    <section id="raspberry" class="section-dark">
+      <div class="img">
+        <img src="{{url_for('static',filename='imgs/raspberrypi.jpeg')}}" alt="">
+      </div>
+      <div class="text right">
+        <div class="">
+          <h3>Raspbery pi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="arduino" class="section-light">
+      <div class="text left">
+        <div class="">
+          <h3>Arduino</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="img">
+        <img src="{{url_for('static',filename='imgs/arduino.jpg')}}" alt="">
+      </div>
+    </section>
+    <section id="app-dev" class="section-dark">
+      <div class="img">
+        <img src="{{ url_for('static',filename='imgs/web-design-small.jpeg')}}" alt="">
+      </div>
+      <div class="text right">
+        <div class="">
+          <h3>App Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Tech Solutions &copy; 2018 </p>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/site.js')}}"></script>
+
+  </body>
+</html>
