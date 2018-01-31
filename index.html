@@ -4,12 +4,30 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="/css/style.css">
-  <!--  <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
-    <script type="text/javascript" src="/js/site.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <!--<script type="text/javascript" src="/js/site.js"></script> -->
+  <script type="text/javascript" src="/js/magic.js"></script>
   </head>
   <body>
     <header>
       <nav>
+        <div class="container">
+          <div class="">
+            <a href="#parallax">Tech Solutions</a>
+          </div>
+          <div id="hamburger" class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <ul>
+            <li><a href="#drone">Drone</a></li>
+            <li><a href="#raspberry">Raspbery</a></li>
+            <li> <a href="#arduino">Arduino</a> </li>
+          </ul>
+
+
+        </div>
 
       </nav>
     </header>
@@ -19,6 +37,7 @@
     <section id="drone" class="section-light">
       <div class="text left">
         <div class="">
+
           <h3>Drones</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <a  class="read-more" onclick="show('drones')">Read More</a>
@@ -105,8 +124,30 @@
         <a  class="btn btn-primary" onclick="hide('application')">Close</a>
       </div>
     </div>
-  <!--  <script type="text/javascript" src="/js/bootstrap.min.js"></script> -->
-    <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+    <section>
+      <div class="form-container">
+        <h3>Contact Us</h3>
+        <p>Get in touch with us, we will like to hear from you</p>
+        <form class="contact-form" action method="post">
+          <div class="">
+            <input type="text" name="name" class="form-item" value="" placeholder="Name">
+          </div>
+          <div class="">
+            <input type="email" class="form-item" name="email" value="" placeholder="Email">
+          </div>
+          <div class="">
+            <textarea name="message" class="form-item" rows="8" cols="80" placeholder="Message"></textarea>
+          </div>
+          <div class="sumbit-container">
+            <input class="submit-button" type="submit" name="" value="Send">
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>By Tech Solutions Where technology meets solutions </p>
+    </footer>
     <script type="text/javascript" src="/js/site.js"></script>
+
   </body>
 </html>
